@@ -1,0 +1,36 @@
+package main;
+
+import main.metamodel.Machine;
+import main.metamodel.State;
+import main.metamodel.Transition;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class MachineInterpreter {
+	private Machine m;
+	private State currentState;
+	//private final Map<String, Integer> integerVariables = new HashMap<>();
+	
+    public void run(Machine m) {
+    	this.m = m;
+    }
+
+    public State getCurrentState() {
+    	if (currentState == null) {
+    		currentState = m.getInitialState();
+    	}
+    	
+    	return currentState;
+    }
+
+
+    public int getInteger(String name) {
+       return m.getInteger(name);
+    }
+
+    public void processEvent(String event) {
+    	
+    }
+}

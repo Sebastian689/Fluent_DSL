@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MachineStructureTest" project="mdsd.assignment1" tests="18" started="18" failures="0" errors="0" ignored="0">
+  <testsuite name="test.MachineStructureTest" time="0.038" displayname="MachineStructureTest" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]">
+    <testcase name="transitionIfVariableEqual" classname="test.MachineStructureTest" time="0.012" displayname="transitionIfVariableEqual()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitionIfVariableEqual()]"/>
+    <testcase name="transitions" classname="test.MachineStructureTest" time="0.002" displayname="transitions()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitions()]"/>
+    <testcase name="transitionIfVariableEqualsAndSet" classname="test.MachineStructureTest" time="0.001" displayname="transitionIfVariableEqualsAndSet()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitionIfVariableEqualsAndSet()]"/>
+    <testcase name="transitionSetVariable" classname="test.MachineStructureTest" time="0.001" displayname="transitionSetVariable()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitionSetVariable()]"/>
+    <testcase name="noTransitions" classname="test.MachineStructureTest" time="0.0" displayname="noTransitions()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:noTransitions()]"/>
+    <testcase name="transitionDecrementVariable" classname="test.MachineStructureTest" time="0.001" displayname="transitionDecrementVariable()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitionDecrementVariable()]"/>
+    <testcase name="states" classname="test.MachineStructureTest" time="0.002" displayname="states()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:states()]"/>
+    <testcase name="initialState" classname="test.MachineStructureTest" time="0.001" displayname="initialState()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:initialState()]"/>
+    <testcase name="transitionIfVariableGreaterAndIncrement" classname="test.MachineStructureTest" time="0.0" displayname="transitionIfVariableGreaterAndIncrement()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitionIfVariableGreaterAndIncrement()]"/>
+    <testcase name="transitionIfVariableLessAndDecrement" classname="test.MachineStructureTest" time="0.001" displayname="transitionIfVariableLessAndDecrement()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitionIfVariableLessAndDecrement()]"/>
+    <testcase name="transitionIfVariableLessThan" classname="test.MachineStructureTest" time="0.001" displayname="transitionIfVariableLessThan()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitionIfVariableLessThan()]"/>
+    <testcase name="emptyMachine" classname="test.MachineStructureTest" time="0.001" displayname="emptyMachine()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:emptyMachine()]"/>
+    <testcase name="initialFirstState" classname="test.MachineStructureTest" time="0.001" displayname="initialFirstState()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:initialFirstState()]"/>
+    <testcase name="transitionIncrementVariable" classname="test.MachineStructureTest" time="0.001" displayname="transitionIncrementVariable()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitionIncrementVariable()]"/>
+    <testcase name="transitionIfVariableGreaterThan" classname="test.MachineStructureTest" time="0.001" displayname="transitionIfVariableGreaterThan()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitionIfVariableGreaterThan()]"/>
+    <testcase name="noVariables" classname="test.MachineStructureTest" time="0.002" displayname="noVariables()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:noVariables()]"/>
+    <testcase name="getState" classname="test.MachineStructureTest" time="0.001" displayname="getState()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:getState()]"/>
+    <testcase name="addVariable" classname="test.MachineStructureTest" time="0.001" displayname="addVariable()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:addVariable()]"/>
+  </testsuite>
+</testrun>

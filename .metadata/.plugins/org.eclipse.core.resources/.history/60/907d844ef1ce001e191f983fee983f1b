@@ -1,0 +1,39 @@
+package test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import main.StateMachine;
+import main.metamodel.Machine;
+import main.metamodel.State;
+import main.metamodel.Transition;
+
+public class Custom {
+	private StateMachine stateMachine;
+	
+	@BeforeEach
+	public void init() {
+		stateMachine = new StateMachine();
+	}
+	
+	@Test
+	public void trans() {
+		Machine m = stateMachine.
+				state("state 1").
+					when("change to 2").to("state 2").
+					when("change to 3").to("state 3").
+				state("state 2").
+					when("change to 3").to("state 3").
+				//state("state 3").
+				build();
+		State state = m.getState("state 2");
+		List<Transition> transitions = state.getTransitions();
+		assertEquals(1, transitions.size());
+		System.out.println(transitions.size());
+		System.out.println(transitions.size());
+	}
+}

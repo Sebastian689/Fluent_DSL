@@ -1,0 +1,39 @@
+package test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import main.StateMachine;
+import main.metamodel.Machine;
+import main.metamodel.State;
+import main.metamodel.Transition;
+
+public class Custom {
+	private StateMachine stateMachine;
+	
+	@BeforeEach
+	public void init() {
+		stateMachine = new StateMachine();
+	}
+	
+	@Test
+	public void transitionIncrementVariable() {
+		Machine m = stateMachine.
+					integer("var").
+					state("state 1").
+						when("SET").to("state 2").increment("var").
+					state("state 2").
+					build();
+		Transition transition = m.getState("state 1").getTransitions().get(0);
+		assertFalse(transition.hasSetOperation());
+		assertTrue(transition.hasIncrementOperation());
+		assertFalse(transition.hasDecrementOperation());
+		assertEquals("var", transition.getOperationVariableName());
+	}
+}

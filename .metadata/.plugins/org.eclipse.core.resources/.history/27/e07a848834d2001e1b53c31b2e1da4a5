@@ -1,0 +1,42 @@
+package test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import main.MachineInterpreter;
+import main.StateMachine;
+import main.metamodel.Machine;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class Custom2 {
+	private StateMachine stateMachine;
+	private MachineInterpreter interpreter;
+	
+	@BeforeEach
+	public void init() {
+		stateMachine = new StateMachine();
+		interpreter = new MachineInterpreter();
+	}
+	
+	@Test
+	public void startInitState() {
+		Machine m = stateMachine.
+					state("state 1").initial().
+					state("state 2").
+					build();
+		interpreter.run(m);
+		assertEquals("state 1", interpreter.getCurrentState().getName());
+	}
+	
+	@Test
+	public void eventNoTransition() {
+		Machine m = stateMachine.
+				state("state 1").initial().
+					when("FIRE").to("state 2").
+				state("state 2").
+				build();
+		interpreter.run(m);
+		interpreter.processEvent("to 2");
+		assertEquals("state 1", interpreter.getCurrentState().getName());
+	}
+}

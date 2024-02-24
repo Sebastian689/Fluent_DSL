@@ -1,0 +1,131 @@
+package main.metamodel;
+
+import java.util.List;
+import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+public class Transition{
+	private String event;
+	private State target;
+	//private Machine machine;
+	
+	private boolean isConditional = false;
+	
+	private String operationVariableName;
+	private Integer operationValue;
+	private OperationType operationType;
+	private ComparisonType comparisonType;
+	
+	private String conditionVariableName;
+	private Integer conditionValue;
+	
+	private enum OperationType { NONE, SET, INCREMENT, DECREMENT }
+	private enum ComparisonType { EQUALS, GREATER, LESS }
+	
+	public Transition(String event) {
+		this.event = event;
+	}
+	
+	public String getEvent() {
+		return event;
+	}
+	
+	public void setTarget(State target) {
+	    this.target = target;
+	}
+
+	public State getTarget() {
+		return target;
+	}
+	
+	
+	public void setOperation(String name, int i) {
+		this.operationVariableName = name;
+		this.operationValue = i;
+		//this.isConditional = true;
+		this.operationType = OperationType.SET;
+		//this.comparisonType = ComparisonType.EQUALS;
+	}
+	
+	public void incrementOperation(String name) {
+		this.operationVariableName = name;
+		if (this.operationValue != null) {
+			this.operationValue++;
+		}
+	    this.operationType = OperationType.INCREMENT;
+	}
+	
+	public void decrementOperation(String name) {
+        this.operationVariableName = name;
+        if (this.operationValue != null) {
+        	this.operationValue--;
+        }
+        this.operationType = OperationType.DECREMENT;
+    }
+
+	public boolean hasSetOperation() {
+		return this.operationType == OperationType.SET;
+	}
+
+	public boolean hasIncrementOperation() {
+		return this.operationType == OperationType.INCREMENT;
+	}
+
+	public boolean hasDecrementOperation() {
+		return this.operationType == OperationType.DECREMENT;
+	}
+
+	public String getOperationVariableName() {
+		return this.operationVariableName;
+	}
+	
+	
+
+	public boolean isConditional() {
+		if (isConditional == true) return true;
+		return false;
+	}
+	
+	public void setCondition(String name, int i) {
+		this.conditionVariableName = name;
+		this.conditionValue = i;
+		this.isConditional = true;
+		//this.operationType = OperationType.SET;
+		this.comparisonType = ComparisonType.EQUALS;
+	}
+	
+
+	public String getConditionVariableName() {
+		return this.conditionVariableName;
+	}
+	
+	public void setConditionVariableName(String name) {
+		this.operationVariableName = name;
+		this.isConditional = true;
+	}
+
+	public Integer getConditionComparedValue() {
+		return this.conditionValue;
+	}
+
+	public boolean isConditionEqual() {
+		return this.comparisonType == ComparisonType.EQUALS;
+	}
+
+	public boolean isConditionGreaterThan() {
+		return this.comparisonType == ComparisonType.EQUALS;
+	}
+
+	public boolean isConditionLessThan() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean hasOperation() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

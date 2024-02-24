@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MachineInterpreterTest" project="mdsd.assignment1" tests="19" started="19" failures="7" errors="11" ignored="0">
+  <testsuite name="test.MachineInterpreterTest" time="0.066" displayname="MachineInterpreterTest" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]">
+    <testcase name="transitionIfVariableEqual" classname="test.MachineInterpreterTest" time="0.033" displayname="transitionIfVariableEqual()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIfVariableEqual()]">
+      <error>java.lang.NullPointerException: Cannot invoke "main.metamodel.State.getName()" because the return value of "main.MachineInterpreter.getCurrentState()" is null&#13;
+	at test.MachineInterpreterTest.transitionIfVariableEqual(MachineInterpreterTest.java:149)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="transitionOrder" classname="test.MachineInterpreterTest" time="0.005" displayname="transitionOrder()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionOrder()]">
+      <failure>
+        <expected>1</expected>
+        <actual>0</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;1&gt; but was: &lt;0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)&#13;
+	at test.MachineInterpreterTest.transitionOrder(MachineInterpreterTest.java:282)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionIfVariableEqualsAndSet" classname="test.MachineInterpreterTest" time="0.002" displayname="transitionIfVariableEqualsAndSet()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIfVariableEqualsAndSet()]">
+      <failure>
+        <expected>42</expected>
+        <actual>0</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;42&gt; but was: &lt;0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)&#13;
+	at test.MachineInterpreterTest.transitionIfVariableEqualsAndSet(MachineInterpreterTest.java:242)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionSetVariable" classname="test.MachineInterpreterTest" time="0.002" displayname="transitionSetVariable()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionSetVariable()]">
+      <failure>
+        <expected>42</expected>
+        <actual>0</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;42&gt; but was: &lt;0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)&#13;
+	at test.MachineInterpreterTest.transitionSetVariable(MachineInterpreterTest.java:107)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionIfVariableNotLessThan" classname="test.MachineInterpreterTest" time="0.002" displayname="transitionIfVariableNotLessThan()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIfVariableNotLessThan()]">
+      <error>java.lang.NullPointerException: Cannot invoke "main.metamodel.State.getName()" because the return value of "main.MachineInterpreter.getCurrentState()" is null&#13;
+	at test.MachineInterpreterTest.transitionIfVariableNotLessThan(MachineInterpreterTest.java:229)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="transitionDecrementVariable" classname="test.MachineInterpreterTest" time="0.002" displayname="transitionDecrementVariable()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionDecrementVariable()]">
+      <failure>
+        <expected>-1</expected>
+        <actual>0</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;-1&gt; but was: &lt;0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)&#13;
+	at test.MachineInterpreterTest.transitionDecrementVariable(MachineInterpreterTest.java:133)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="startInitState" classname="test.MachineInterpreterTest" time="0.001" displayname="startInitState()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:startInitState()]">
+      <error>java.lang.NullPointerException: Cannot invoke "main.metamodel.State.getName()" because the return value of "main.MachineInterpreter.getCurrentState()" is null&#13;
+	at test.MachineInterpreterTest.startInitState(MachineInterpreterTest.java:29)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="listOfEvents" classname="test.MachineInterpreterTest" time="0.001" displayname="listOfEvents()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:listOfEvents()]">
+      <error>java.lang.NullPointerException: Cannot invoke "main.metamodel.State.getName()" because the return value of "main.MachineInterpreter.getCurrentState()" is null&#13;
+	at test.MachineInterpreterTest.listOfEvents(MachineInterpreterTest.java:68)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="transitionIfVariableGreaterAndIncrement" classname="test.MachineInterpreterTest" time="0.001" displayname="transitionIfVariableGreaterAndIncrement()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIfVariableGreaterAndIncrement()]">
+      <failure>
+        <expected>1</expected>
+        <actual>0</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;1&gt; but was: &lt;0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)&#13;
+	at test.MachineInterpreterTest.transitionIfVariableGreaterAndIncrement(MachineInterpreterTest.java:255)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionIfVariableNotEqual" classname="test.MachineInterpreterTest" time="0.001" displayname="transitionIfVariableNotEqual()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIfVariableNotEqual()]">
+      <error>java.lang.NullPointerException: Cannot invoke "main.metamodel.State.getName()" because the return value of "main.MachineInterpreter.getCurrentState()" is null&#13;
+	at test.MachineInterpreterTest.transitionIfVariableNotEqual(MachineInterpreterTest.java:165)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="transitionIfVariableNotGreaterThan" classname="test.MachineInterpreterTest" time="0.001" displayname="transitionIfVariableNotGreaterThan()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIfVariableNotGreaterThan()]">
+      <error>java.lang.NullPointerException: Cannot invoke "main.metamodel.State.getName()" because the return value of "main.MachineInterpreter.getCurrentState()" is null&#13;
+	at test.MachineInterpreterTest.transitionIfVariableNotGreaterThan(MachineInterpreterTest.java:197)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="transitionIfVariableLessAndDecrement" classname="test.MachineInterpreterTest" time="0.001" displayname="transitionIfVariableLessAndDecrement()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIfVariableLessAndDecrement()]">
+      <failure>
+        <expected>-1</expected>
+        <actual>0</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;-1&gt; but was: &lt;0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)&#13;
+	at test.MachineInterpreterTest.transitionIfVariableLessAndDecrement(MachineInterpreterTest.java:268)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionIfVariableLessThan" classname="test.MachineInterpreterTest" time="0.001" displayname="transitionIfVariableLessThan()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIfVariableLessThan()]">
+      <error>java.lang.NullPointerException: Cannot invoke "main.metamodel.State.getName()" because the return value of "main.MachineInterpreter.getCurrentState()" is null&#13;
+	at test.MachineInterpreterTest.transitionIfVariableLessThan(MachineInterpreterTest.java:213)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="initVariable" classname="test.MachineInterpreterTest" time="0.001" displayname="initVariable()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:initVariable()]"/>
+    <testcase name="transitionIncrementVariable" classname="test.MachineInterpreterTest" time="0.001" displayname="transitionIncrementVariable()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIncrementVariable()]">
+      <failure>
+        <expected>1</expected>
+        <actual>0</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;1&gt; but was: &lt;0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)&#13;
+	at test.MachineInterpreterTest.transitionIncrementVariable(MachineInterpreterTest.java:120)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionIfVariableGreaterThan" classname="test.MachineInterpreterTest" time="0.001" displayname="transitionIfVariableGreaterThan()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIfVariableGreaterThan()]">
+      <error>java.lang.NullPointerException: Cannot invoke "main.metamodel.State.getName()" because the return value of "main.MachineInterpreter.getCurrentState()" is null&#13;
+	at test.MachineInterpreterTest.transitionIfVariableGreaterThan(MachineInterpreterTest.java:181)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="eventNoTransition" classname="test.MachineInterpreterTest" time="0.001" displayname="eventNoTransition()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:eventNoTransition()]">
+      <error>java.lang.NullPointerException: Cannot invoke "main.metamodel.State.getName()" because the return value of "main.MachineInterpreter.getCurrentState()" is null&#13;
+	at test.MachineInterpreterTest.eventNoTransition(MachineInterpreterTest.java:41)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="chooseTransition" classname="test.MachineInterpreterTest" time="0.001" displayname="chooseTransition()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:chooseTransition()]">
+      <error>java.lang.NullPointerException: Cannot invoke "main.metamodel.State.getName()" because the return value of "main.MachineInterpreter.getCurrentState()" is null&#13;
+	at test.MachineInterpreterTest.chooseTransition(MachineInterpreterTest.java:84)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="eventTransition" classname="test.MachineInterpreterTest" time="0.0" displayname="eventTransition()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:eventTransition()]">
+      <error>java.lang.NullPointerException: Cannot invoke "main.metamodel.State.getName()" because the return value of "main.MachineInterpreter.getCurrentState()" is null&#13;
+	at test.MachineInterpreterTest.eventTransition(MachineInterpreterTest.java:53)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

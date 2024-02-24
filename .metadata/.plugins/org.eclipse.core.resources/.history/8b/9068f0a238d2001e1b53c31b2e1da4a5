@@ -1,0 +1,71 @@
+package main;
+
+import main.metamodel.Machine;
+import main.metamodel.State;
+import main.metamodel.Transition;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class MachineInterpreter {
+	private Machine m;
+	private State currentState;
+	private final Map<String, Integer> integerVariables = new HashMap<>();
+	
+    public void run(Machine m) {
+    	this.m = m;
+    	
+    	for (String integerVariable : m.getIntegerVariables().keySet()) {
+            integerVariables.put(integerVariable, m.getIntegerVariables().get(integerVariable));
+        }
+    }
+
+    public State getCurrentState() {
+    	return currentState;
+    }
+
+
+    public int getInteger(String name) {
+       return 0;
+    }
+
+    public void processEvent(String event) {
+    	for (Transition transition : currentState.getTransitions()) {
+            if (transition.getEvent().equals(event) && isConditionSatisfied(transition)) {
+                performOperation(transition);
+                currentState = transition.getTarget();
+                break;
+            }
+        }
+    }
+    
+    private void performOperation(Transition transition) {
+        if (transition.hasOperation()) {
+            String varName = transition.getOperationVariableName();
+            int varValue = getInteger(varName);
+           
+            if (transition.hasSetOperation()) {
+                integerVariables.put(varName, transition.getOperationValue());
+            } else if (transition.hasIncrementOperation()) {
+                integerVariables.put(varName, varValue + 1);
+            } else if (transition.hasDecrementOperation()) {
+                integerVariables.put(varName, varValue - 1);
+            }
+        }
+    }
+    
+    private boolean isConditionSatisfied(Transition transition) {
+        if (transition.isConditional()) {
+            int value = getInteger(transition.getConditionVariableName());
+            if (transition.isConditionEqual()) {
+            	return value == transition.getConditionComparedValue();
+            } else if (transition.isConditionGreaterThan()) {
+            	return value > transition.getConditionComparedValue();
+            } else if (transition.isConditionLessThan()) {
+            	return value < transition.getConditionComparedValue();
+            }
+        }
+        return true;
+    }
+}

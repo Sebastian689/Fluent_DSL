@@ -1,0 +1,72 @@
+package main;
+
+import main.metamodel.Machine;
+import main.metamodel.State;
+import main.metamodel.Transition;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class MachineInterpreter {
+	private Machine m;
+	private State currentState;
+	private Transition transition;
+	//private final Map<String, Integer> integerVariables = new HashMap<>();
+	
+    public void run(Machine m) {
+    	this.m = m;
+    	currentState = m.getInitialState();
+
+    }
+
+    public State getCurrentState() {
+    	return currentState;
+    }
+
+    public int getInteger(String name) {
+       return m.getInt(name);
+    }
+
+    public void processEvent(String event) {
+    	transition = currentState.getTransitionByEvent(event);
+    	if (transition != null) {
+    		if (!transition.hasOperation()) {
+    			if (!transition.isConditional())
+    			{
+    				currentState = transition.getTarget();
+    			}
+    		} 
+    		else if (transition.hasSetOperation()){
+    			m.setInteger(transition.getOperationVariableName(), transition.getOperationValue());
+    			currentState = transition.getTarget();
+    		}
+    		else if (transition.hasIncrementOperation()) {
+    			m.setInteger(transition.getOperationVariableName(), m.getInt(transition.getOperationVariableName())+1);
+    			currentState = transition.getTarget();
+    		} 
+    		else if (transition.hasDecrementOperation()) {
+    			m.setInteger(transition.getOperationVariableName(), m.getInt(transition.getOperationVariableName())-1);
+    			currentState = transition.getTarget();
+    		}
+    		
+    		if (transition.isConditionEqual()) {
+    			if (m.getInt(transition.getConditionVariableName()) == transition.getConditionComparedValue()) {
+    				currentState = transition.getTarget();
+    			}
+    		}
+    		else if (transition.isConditionGreaterThan()) {
+    			if (m.getInt(transition.getConditionVariableName()) > transition.getConditionComparedValue()) {
+    				currentState = transition.getTarget();
+    			}
+    		}
+    		else if (transition.isConditionLessThan()) {
+    			if (m.getInt(transition.getConditionVariableName()) < transition.getConditionComparedValue()) {
+    				currentState = transition.getTarget();
+    			}
+    		}
+    		
+    		
+    	}
+    }
+}

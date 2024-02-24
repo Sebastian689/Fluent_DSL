@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Custom2" project="mdsd.assignment1" tests="4" started="4" failures="0" errors="2" ignored="0">
+  <testsuite name="test.Custom2" time="0.029" displayname="Custom2" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]">
+    <testcase name="startInitState" classname="test.Custom2" time="0.018" displayname="startInitState()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:startInitState()]"/>
+    <testcase name="initVariable" classname="test.Custom2" time="0.0" displayname="initVariable()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:initVariable()]"/>
+    <testcase name="eventNoTransition" classname="test.Custom2" time="0.007" displayname="eventNoTransition()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:eventNoTransition()]">
+      <error>java.lang.NullPointerException: Cannot invoke "main.metamodel.State.getTransitionByEvent(String)" because "this.currentState" is null&#13;
+	at main.MachineInterpreter.processEvent(MachineInterpreter.java:33)&#13;
+	at test.Custom2.eventNoTransition(Custom2.java:39)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="eventTransition" classname="test.Custom2" time="0.002" displayname="eventTransition()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:eventTransition()]">
+      <error>java.lang.NullPointerException: Cannot invoke "main.metamodel.State.getTransitionByEvent(String)" because "this.currentState" is null&#13;
+	at main.MachineInterpreter.processEvent(MachineInterpreter.java:33)&#13;
+	at test.Custom2.eventTransition(Custom2.java:51)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

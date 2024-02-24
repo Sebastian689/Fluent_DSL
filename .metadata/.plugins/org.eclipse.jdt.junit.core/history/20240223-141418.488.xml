@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MachineStructureTest" project="mdsd.assignment1" tests="18" started="18" failures="2" errors="0" ignored="0">
+  <testsuite name="test.MachineStructureTest" time="0.018" displayname="MachineStructureTest" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]">
+    <testcase name="transitionIfVariableEqual" classname="test.MachineStructureTest" time="0.0" displayname="transitionIfVariableEqual()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitionIfVariableEqual()]"/>
+    <testcase name="transitions" classname="test.MachineStructureTest" time="0.0" displayname="transitions()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitions()]"/>
+    <testcase name="transitionIfVariableEqualsAndSet" classname="test.MachineStructureTest" time="0.0" displayname="transitionIfVariableEqualsAndSet()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitionIfVariableEqualsAndSet()]">
+      <failure>
+        <expected>true</expected>
+        <actual>false</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)&#13;
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)&#13;
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)&#13;
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)&#13;
+	at test.MachineStructureTest.transitionIfVariableEqualsAndSet(MachineStructureTest.java:246)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionSetVariable" classname="test.MachineStructureTest" time="0.002" displayname="transitionSetVariable()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitionSetVariable()]">
+      <failure>
+        <expected>true</expected>
+        <actual>false</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;true&gt; but was: &lt;false&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)&#13;
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)&#13;
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)&#13;
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)&#13;
+	at test.MachineStructureTest.transitionSetVariable(MachineStructureTest.java:140)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="noTransitions" classname="test.MachineStructureTest" time="0.001" displayname="noTransitions()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:noTransitions()]"/>
+    <testcase name="transitionDecrementVariable" classname="test.MachineStructureTest" time="0.001" displayname="transitionDecrementVariable()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitionDecrementVariable()]"/>
+    <testcase name="states" classname="test.MachineStructureTest" time="0.001" displayname="states()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:states()]"/>
+    <testcase name="initialState" classname="test.MachineStructureTest" time="0.0" displayname="initialState()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:initialState()]"/>
+    <testcase name="transitionIfVariableGreaterAndIncrement" classname="test.MachineStructureTest" time="0.001" displayname="transitionIfVariableGreaterAndIncrement()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitionIfVariableGreaterAndIncrement()]"/>
+    <testcase name="transitionIfVariableLessAndDecrement" classname="test.MachineStructureTest" time="0.001" displayname="transitionIfVariableLessAndDecrement()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitionIfVariableLessAndDecrement()]"/>
+    <testcase name="transitionIfVariableLessThan" classname="test.MachineStructureTest" time="0.001" displayname="transitionIfVariableLessThan()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitionIfVariableLessThan()]"/>
+    <testcase name="emptyMachine" classname="test.MachineStructureTest" time="0.001" displayname="emptyMachine()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:emptyMachine()]"/>
+    <testcase name="initialFirstState" classname="test.MachineStructureTest" time="0.001" displayname="initialFirstState()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:initialFirstState()]"/>
+    <testcase name="transitionIncrementVariable" classname="test.MachineStructureTest" time="0.001" displayname="transitionIncrementVariable()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitionIncrementVariable()]"/>
+    <testcase name="transitionIfVariableGreaterThan" classname="test.MachineStructureTest" time="0.001" displayname="transitionIfVariableGreaterThan()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:transitionIfVariableGreaterThan()]"/>
+    <testcase name="noVariables" classname="test.MachineStructureTest" time="0.001" displayname="noVariables()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:noVariables()]"/>
+    <testcase name="getState" classname="test.MachineStructureTest" time="0.001" displayname="getState()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:getState()]"/>
+    <testcase name="addVariable" classname="test.MachineStructureTest" time="0.001" displayname="addVariable()" uniqueid="[engine:junit-jupiter]/[class:test.MachineStructureTest]/[method:addVariable()]"/>
+  </testsuite>
+</testrun>

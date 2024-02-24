@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Custom2" project="mdsd.assignment1" tests="10" started="10" failures="1" errors="0" ignored="0">
+  <testsuite name="test.Custom2" time="0.039" displayname="Custom2" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]">
+    <testcase name="transitionIfVariableEqual" classname="test.Custom2" time="0.03" displayname="transitionIfVariableEqual()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:transitionIfVariableEqual()]">
+      <failure>
+        <expected>state 3</expected>
+        <actual>state 2</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;state 3&gt; but was: &lt;state 2&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)&#13;
+	at test.Custom2.transitionIfVariableEqual(Custom2.java:149)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionSetVariable" classname="test.Custom2" time="0.0" displayname="transitionSetVariable()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:transitionSetVariable()]"/>
+    <testcase name="transitionDecrementVariable" classname="test.Custom2" time="0.0" displayname="transitionDecrementVariable()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:transitionDecrementVariable()]"/>
+    <testcase name="startInitState" classname="test.Custom2" time="0.0" displayname="startInitState()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:startInitState()]"/>
+    <testcase name="listOfEvents" classname="test.Custom2" time="0.0" displayname="listOfEvents()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:listOfEvents()]"/>
+    <testcase name="initVariable" classname="test.Custom2" time="0.0" displayname="initVariable()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:initVariable()]"/>
+    <testcase name="transitionIncrementVariable" classname="test.Custom2" time="0.0" displayname="transitionIncrementVariable()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:transitionIncrementVariable()]"/>
+    <testcase name="eventNoTransition" classname="test.Custom2" time="0.0" displayname="eventNoTransition()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:eventNoTransition()]"/>
+    <testcase name="chooseTransition" classname="test.Custom2" time="0.001" displayname="chooseTransition()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:chooseTransition()]"/>
+    <testcase name="eventTransition" classname="test.Custom2" time="0.0" displayname="eventTransition()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:eventTransition()]"/>
+  </testsuite>
+</testrun>

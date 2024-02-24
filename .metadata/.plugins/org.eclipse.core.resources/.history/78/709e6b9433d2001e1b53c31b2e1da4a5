@@ -1,0 +1,33 @@
+package main;
+
+import main.metamodel.Machine;
+import main.metamodel.State;
+import main.metamodel.Transition;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class MachineInterpreter {
+	private Machine currentState;
+	
+    public void run(Machine m) {
+    	
+    }
+
+    public State getCurrentState() {
+        // TODO Auto-generated method stub
+        return 
+    }
+
+    public void processEvent(String string) {
+        // TODO Auto-generated method stub
+
+    }
+
+    public int getInteger(String string) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+}

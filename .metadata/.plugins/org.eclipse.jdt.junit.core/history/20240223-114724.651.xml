@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Custom2" project="mdsd.assignment1" tests="3" started="3" failures="1" errors="0" ignored="0">
+  <testsuite name="test.Custom2" time="0.029" displayname="Custom2" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]">
+    <testcase name="startInitState" classname="test.Custom2" time="0.019" displayname="startInitState()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:startInitState()]"/>
+    <testcase name="eventNoTransition" classname="test.Custom2" time="0.001" displayname="eventNoTransition()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:eventNoTransition()]"/>
+    <testcase name="eventTransition" classname="test.Custom2" time="0.008" displayname="eventTransition()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:eventTransition()]">
+      <failure>
+        <expected>state 2</expected>
+        <actual>state 1</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;state 2&gt; but was: &lt;state 1&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)&#13;
+	at test.Custom2.eventTransition(Custom2.java:52)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+  </testsuite>
+</testrun>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Custom2" project="mdsd.assignment1" tests="8" started="8" failures="0" errors="0" ignored="0">
+  <testsuite name="test.Custom2" time="0.028" displayname="Custom2" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]">
+    <testcase name="transitionSetVariable" classname="test.Custom2" time="0.019" displayname="transitionSetVariable()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:transitionSetVariable()]"/>
+    <testcase name="startInitState" classname="test.Custom2" time="0.002" displayname="startInitState()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:startInitState()]"/>
+    <testcase name="listOfEvents" classname="test.Custom2" time="0.001" displayname="listOfEvents()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:listOfEvents()]"/>
+    <testcase name="initVariable" classname="test.Custom2" time="0.001" displayname="initVariable()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:initVariable()]"/>
+    <testcase name="transitionIncrementVariable" classname="test.Custom2" time="0.0" displayname="transitionIncrementVariable()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:transitionIncrementVariable()]"/>
+    <testcase name="eventNoTransition" classname="test.Custom2" time="0.001" displayname="eventNoTransition()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:eventNoTransition()]"/>
+    <testcase name="chooseTransition" classname="test.Custom2" time="0.001" displayname="chooseTransition()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:chooseTransition()]"/>
+    <testcase name="eventTransition" classname="test.Custom2" time="0.001" displayname="eventTransition()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:eventTransition()]"/>
+  </testsuite>
+</testrun>

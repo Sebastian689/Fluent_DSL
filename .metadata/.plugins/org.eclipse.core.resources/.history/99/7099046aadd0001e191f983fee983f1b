@@ -1,0 +1,52 @@
+package main;
+
+import main.metamodel.Machine;
+import main.metamodel.State;
+import main.metamodel.Transition;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class MachineInterpreter {
+	private State currentState;
+    private Map<String, Integer> variables;
+	
+    public void run(Machine m) {
+    	currentState = m.getInitialState(); // Start from the initial state
+        variables = new HashMap<>(); // Initialize variable storage
+
+        // Keep executing transitions until the current state is a final state
+        while (!currentState.isFinal()) {
+            // Check if there is a transition triggered by any event
+            boolean transitionFound = false;
+            for (Transition transition : currentState.getTransitions()) {
+                if (transition.getCondition().evaluate(variables)) {
+                    currentState = transition.getTarget(); // Move to the next state
+                    executeOperations(transition);
+                    transitionFound = true;
+                    break;
+                }
+            }
+            // If no valid transition is found, stop the state machine
+            if (!transitionFound) {
+                break;
+            }
+        }
+
+    }
+
+    public State getCurrentState() {
+    	return currentState;
+    }
+
+    public void processEvent(String string) {
+        // TODO Auto-generated method stub
+
+    }
+
+    public int getInteger(String string) {
+    	return variables.getOrDefault(name, 0);
+    }
+
+}

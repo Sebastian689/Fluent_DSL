@@ -1,0 +1,77 @@
+package main;
+
+import main.metamodel.Machine;
+import main.metamodel.State;
+import main.metamodel.Transition;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class MachineInterpreter {
+	private Machine m;
+	private State currentState;
+	private Transition transition;
+	private State hold;
+	//private final Map<String, Integer> integerVariables = new HashMap<>();
+	
+    public void run(Machine m) {
+    	this.m = m;
+    	currentState = m.getInitialState();
+
+    }
+
+    public State getCurrentState() {
+    	return currentState;
+    }
+
+    public int getInteger(String name) {
+       return m.getInt(name);
+    }
+
+    public void processEvent(String event) {
+    	System.out.println(event);
+    	transition = currentState.getTransitionByEvent(event);
+    	System.out.println(transition.getConditionVariableName());
+    	if (transition != null) {
+    		if (!transition.hasOperation()) {
+    			if (!transition.isConditional())
+    			{
+    				hold = transition.getTarget();
+    			}
+    		} 
+    		else if (transition.hasSetOperation()){
+    			m.setInteger(transition.getOperationVariableName(), transition.getOperationValue());
+    			hold = transition.getTarget();
+    		}
+    		else if (transition.hasIncrementOperation()) {
+    			System.out.println("here");
+    			m.setInteger(transition.getOperationVariableName(), m.getInt(transition.getOperationVariableName())+1);
+    			hold = transition.getTarget();
+    		} 
+    		else if (transition.hasDecrementOperation()) {
+    			m.setInteger(transition.getOperationVariableName(), m.getInt(transition.getOperationVariableName())-1);
+    			hold = transition.getTarget();
+    		}
+    		
+    		if (transition.isConditionEqual()) {
+    			System.out.println(currentState.getName());
+    			if (m.getInt(transition.getConditionVariableName()) == transition.getConditionComparedValue()) {
+    				System.out.println("here");
+    				hold = transition.getTarget();
+    			}
+    		}
+    		else if (transition.isConditionGreaterThan()) {
+    			if (m.getInt(transition.getConditionVariableName()) > transition.getConditionComparedValue()) {
+    				hold = transition.getTarget();
+    			}
+    		}
+    		else if (transition.isConditionLessThan()) {
+    			if (m.getInt(transition.getConditionVariableName()) < transition.getConditionComparedValue()) {
+    				hold = transition.getTarget();
+    			}
+    		}
+    		currentState = hold;
+    	}
+    }
+}

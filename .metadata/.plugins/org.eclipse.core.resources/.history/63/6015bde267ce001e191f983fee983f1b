@@ -1,0 +1,55 @@
+package main.metamodel;
+
+import java.util.List;
+import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+public class Machine {
+	private List<State> states = new ArrayList<>();
+	private State initialState;
+	private Map<String, Integer> integers = new HashMap<>();
+	
+	public void addState(State state) {
+		//if (initialState != null) {
+			states.add(state);
+		//}
+	}
+
+	public List<State> getStates() {
+		return states;
+	}
+	
+	public void setInitialState(State state) {
+        this.initialState = state;
+    }
+
+	public State getInitialState() {
+		return initialState;
+	}
+
+	public State getState(String name) {
+		for (State state : states) {
+	        if (state.getName().equals(name)) {
+	            return state;
+	        }
+	    }
+
+	    return null;
+	}
+	
+	public void setInteger(String name, int value) {
+		integers.put(name, value);
+	}
+
+	public int numberOfIntegers() {
+		return integers.size();
+	}
+
+	public boolean hasInteger(String string) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+}
+

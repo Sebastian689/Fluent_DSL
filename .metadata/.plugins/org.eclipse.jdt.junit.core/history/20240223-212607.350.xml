@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CDPlayerTest" project="mdsd.assignment1" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="test.CDPlayerTest" time="0.018" displayname="CDPlayerTest" uniqueid="[engine:junit-jupiter]/[class:test.CDPlayerTest]">
+    <testcase name="playMusic" classname="test.CDPlayerTest" time="0.018" displayname="playMusic()" uniqueid="[engine:junit-jupiter]/[class:test.CDPlayerTest]/[method:playMusic()]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MachineInterpreterTest" project="mdsd.assignment1" tests="19" started="19" failures="16" errors="0" ignored="0">
+  <testsuite name="test.MachineInterpreterTest" time="0.005" displayname="MachineInterpreterTest" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]">
+    <testcase name="transitionIfVariableEqual" classname="test.MachineInterpreterTest" time="0.001" displayname="transitionIfVariableEqual()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIfVariableEqual()]">
+      <failure>
+        <expected>state 3</expected>
+        <actual>state 1</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;state 3&gt; but was: &lt;state 1&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)&#13;
+	at test.MachineInterpreterTest.transitionIfVariableEqual(MachineInterpreterTest.java:149)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionOrder" classname="test.MachineInterpreterTest" time="0.0" displayname="transitionOrder()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionOrder()]">
+      <failure>
+        <expected>1</expected>
+        <actual>0</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;1&gt; but was: &lt;0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)&#13;
+	at test.MachineInterpreterTest.transitionOrder(MachineInterpreterTest.java:282)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionIfVariableEqualsAndSet" classname="test.MachineInterpreterTest" time="0.0" displayname="transitionIfVariableEqualsAndSet()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIfVariableEqualsAndSet()]">
+      <failure>
+        <expected>42</expected>
+        <actual>0</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;42&gt; but was: &lt;0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)&#13;
+	at test.MachineInterpreterTest.transitionIfVariableEqualsAndSet(MachineInterpreterTest.java:242)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionSetVariable" classname="test.MachineInterpreterTest" time="0.0" displayname="transitionSetVariable()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionSetVariable()]">
+      <failure>
+        <expected>42</expected>
+        <actual>0</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;42&gt; but was: &lt;0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)&#13;
+	at test.MachineInterpreterTest.transitionSetVariable(MachineInterpreterTest.java:107)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionIfVariableNotLessThan" classname="test.MachineInterpreterTest" time="0.0" displayname="transitionIfVariableNotLessThan()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIfVariableNotLessThan()]">
+      <failure>
+        <expected>state 2</expected>
+        <actual>state 1</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;state 2&gt; but was: &lt;state 1&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)&#13;
+	at test.MachineInterpreterTest.transitionIfVariableNotLessThan(MachineInterpreterTest.java:229)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionDecrementVariable" classname="test.MachineInterpreterTest" time="0.0" displayname="transitionDecrementVariable()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionDecrementVariable()]">
+      <failure>
+        <expected>-1</expected>
+        <actual>0</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;-1&gt; but was: &lt;0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)&#13;
+	at test.MachineInterpreterTest.transitionDecrementVariable(MachineInterpreterTest.java:133)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="startInitState" classname="test.MachineInterpreterTest" time="0.0" displayname="startInitState()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:startInitState()]"/>
+    <testcase name="listOfEvents" classname="test.MachineInterpreterTest" time="0.0" displayname="listOfEvents()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:listOfEvents()]">
+      <failure>
+        <expected>state 3</expected>
+        <actual>state 1</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;state 3&gt; but was: &lt;state 1&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)&#13;
+	at test.MachineInterpreterTest.listOfEvents(MachineInterpreterTest.java:68)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionIfVariableGreaterAndIncrement" classname="test.MachineInterpreterTest" time="0.001" displayname="transitionIfVariableGreaterAndIncrement()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIfVariableGreaterAndIncrement()]">
+      <failure>
+        <expected>1</expected>
+        <actual>0</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;1&gt; but was: &lt;0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)&#13;
+	at test.MachineInterpreterTest.transitionIfVariableGreaterAndIncrement(MachineInterpreterTest.java:255)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionIfVariableNotEqual" classname="test.MachineInterpreterTest" time="0.0" displayname="transitionIfVariableNotEqual()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIfVariableNotEqual()]">
+      <failure>
+        <expected>state 2</expected>
+        <actual>state 1</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;state 2&gt; but was: &lt;state 1&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)&#13;
+	at test.MachineInterpreterTest.transitionIfVariableNotEqual(MachineInterpreterTest.java:165)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionIfVariableNotGreaterThan" classname="test.MachineInterpreterTest" time="0.0" displayname="transitionIfVariableNotGreaterThan()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIfVariableNotGreaterThan()]">
+      <failure>
+        <expected>state 2</expected>
+        <actual>state 1</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;state 2&gt; but was: &lt;state 1&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)&#13;
+	at test.MachineInterpreterTest.transitionIfVariableNotGreaterThan(MachineInterpreterTest.java:197)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionIfVariableLessAndDecrement" classname="test.MachineInterpreterTest" time="0.0" displayname="transitionIfVariableLessAndDecrement()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIfVariableLessAndDecrement()]">
+      <failure>
+        <expected>-1</expected>
+        <actual>0</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;-1&gt; but was: &lt;0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)&#13;
+	at test.MachineInterpreterTest.transitionIfVariableLessAndDecrement(MachineInterpreterTest.java:268)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionIfVariableLessThan" classname="test.MachineInterpreterTest" time="0.0" displayname="transitionIfVariableLessThan()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIfVariableLessThan()]">
+      <failure>
+        <expected>state 3</expected>
+        <actual>state 1</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;state 3&gt; but was: &lt;state 1&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)&#13;
+	at test.MachineInterpreterTest.transitionIfVariableLessThan(MachineInterpreterTest.java:213)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="initVariable" classname="test.MachineInterpreterTest" time="0.0" displayname="initVariable()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:initVariable()]"/>
+    <testcase name="transitionIncrementVariable" classname="test.MachineInterpreterTest" time="0.0" displayname="transitionIncrementVariable()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIncrementVariable()]">
+      <failure>
+        <expected>1</expected>
+        <actual>0</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;1&gt; but was: &lt;0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)&#13;
+	at test.MachineInterpreterTest.transitionIncrementVariable(MachineInterpreterTest.java:120)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="transitionIfVariableGreaterThan" classname="test.MachineInterpreterTest" time="0.0" displayname="transitionIfVariableGreaterThan()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:transitionIfVariableGreaterThan()]">
+      <failure>
+        <expected>state 3</expected>
+        <actual>state 1</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;state 3&gt; but was: &lt;state 1&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)&#13;
+	at test.MachineInterpreterTest.transitionIfVariableGreaterThan(MachineInterpreterTest.java:181)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="eventNoTransition" classname="test.MachineInterpreterTest" time="0.0" displayname="eventNoTransition()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:eventNoTransition()]"/>
+    <testcase name="chooseTransition" classname="test.MachineInterpreterTest" time="0.0" displayname="chooseTransition()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:chooseTransition()]">
+      <failure>
+        <expected>state 3</expected>
+        <actual>state 1</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;state 3&gt; but was: &lt;state 1&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)&#13;
+	at test.MachineInterpreterTest.chooseTransition(MachineInterpreterTest.java:84)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="eventTransition" classname="test.MachineInterpreterTest" time="0.0" displayname="eventTransition()" uniqueid="[engine:junit-jupiter]/[class:test.MachineInterpreterTest]/[method:eventTransition()]">
+      <failure>
+        <expected>state 2</expected>
+        <actual>state 1</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;state 2&gt; but was: &lt;state 1&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)&#13;
+	at test.MachineInterpreterTest.eventTransition(MachineInterpreterTest.java:53)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+  </testsuite>
+</testrun>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Custom2" project="mdsd.assignment1" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="test.Custom2" time="0.02" displayname="Custom2" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]">
+    <testcase name="startInitState" classname="test.Custom2" time="0.017" displayname="startInitState()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:startInitState()]"/>
+    <testcase name="eventNoTransition" classname="test.Custom2" time="0.003" displayname="eventNoTransition()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:eventNoTransition()]"/>
+  </testsuite>
+</testrun>

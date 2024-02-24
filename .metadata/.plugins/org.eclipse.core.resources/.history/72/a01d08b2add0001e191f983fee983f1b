@@ -1,0 +1,63 @@
+package main;
+
+import main.metamodel.Machine;
+import main.metamodel.State;
+import main.metamodel.Transition;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class MachineInterpreter {
+	private State currentState;
+    private Map<String, Integer> variables;
+	
+    public void run(Machine m) {
+    	currentState = machine.getInitialState();
+        variables = new HashMap<>();
+
+        while (!currentState.isFinal()) {
+            Transition transition = findValidTransition(currentState);
+            if (transition != null) {
+                executeTransition(transition);
+                currentState = transition.getTarget();
+            } else {
+                break; // No valid transition found, stop state machine
+            }
+        }
+    }
+
+    private Transition findValidTransition(State state) {
+        for (Transition transition : state.getTransitions()) {
+            if (transition.isValid(variables)) {
+                return transition;
+            }
+        }
+        return null;
+    }
+
+    private void executeTransition(Transition transition) {
+        Map<String, Integer> operations = transition.getOperations();
+        for (Map.Entry<String, Integer> entry : operations.entrySet()) {
+            String variableName = entry.getKey();
+            Integer value = entry.getValue();
+            variables.put(variableName, variables.getOrDefault(variableName, 0) + value);
+        }
+    }
+
+    public State getCurrentState() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    public void processEvent(String string) {
+        // TODO Auto-generated method stub
+
+    }
+
+    public int getInteger(String string) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+}

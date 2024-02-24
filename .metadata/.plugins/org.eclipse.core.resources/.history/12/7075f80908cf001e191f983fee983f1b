@@ -1,0 +1,101 @@
+package main;
+
+import main.metamodel.Machine;
+import main.metamodel.State;
+import main.metamodel.Transition;
+
+import java.util.List;
+import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+public class StateMachine {
+	private Machine machine;
+	private State currentState;
+	private Transition currentTransition;
+	
+	public StateMachine() {
+		this.machine = new Machine();
+	}
+	
+	public Machine build() {
+		if (machine.getInitialState() == null && !machine.getStates().isEmpty()) {
+            machine.setInitialState(machine.getStates().get(0));
+        }
+		
+		//currentState = null;
+        //currentTransition = null;
+
+        return machine;
+	}
+
+	public StateMachine state(String name) {
+		currentState = machine.getState(name);
+		if (currentState == null) {
+			currentState = new State(name);
+			machine.addState(currentState);
+		}
+		System.out.println("In " + name);
+		return this;
+	}
+
+	public StateMachine initial() {
+		machine.setInitialState(currentState);
+		return this;
+	}
+
+	public StateMachine when(String name) {
+	    currentTransition = new Transition(name);
+	    currentState.addTransition(currentTransition);
+	    System.out.println("Added transtition '" + currentTransition.getEvent() + "' to " + currentState.getName());
+	    return this;
+	}
+
+	public StateMachine to(String targetName) {
+	        State targetState = machine.getState(targetName);
+	        if (targetState == null) {
+	            targetState = new State(targetName);
+	            machine.addState(targetState);
+	        }
+	        currentTransition.setTarget(targetState);
+	        System.out.println("Set '" + currentTransition.getEvent() + "' to " + targetState.getName());
+	        return this;
+	}
+
+	public StateMachine integer(String name) {
+		machine.setInteger(name, 0);
+		return this;
+	}
+
+	public StateMachine set(String string, int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public StateMachine increment(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public StateMachine decrement(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public StateMachine ifEquals(String string, int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public StateMachine ifGreaterThan(String string, int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public StateMachine ifLessThan(String string, int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

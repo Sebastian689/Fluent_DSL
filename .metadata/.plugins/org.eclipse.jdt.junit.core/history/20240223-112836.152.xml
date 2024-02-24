@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Custom2" project="mdsd.assignment1" tests="3" started="3" failures="0" errors="3" ignored="0">
+  <testsuite name="test.Custom2" time="0.001" displayname="Custom2" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]">
+    <testcase name="startInitState" classname="test.Custom2" time="0.001" displayname="startInitState()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:startInitState()]">
+      <error>java.lang.NullPointerException: Cannot invoke "main.metamodel.State.getName()" because the return value of "main.MachineInterpreter.getCurrentState()" is null&#13;
+	at test.Custom2.startInitState(Custom2.java:28)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="eventNoTransition" classname="test.Custom2" time="0.0" displayname="eventNoTransition()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:eventNoTransition()]">
+      <error>java.lang.NullPointerException: Cannot invoke "main.metamodel.State.getName()" because the return value of "main.MachineInterpreter.getCurrentState()" is null&#13;
+	at test.Custom2.eventNoTransition(Custom2.java:40)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="eventTransition" classname="test.Custom2" time="0.0" displayname="eventTransition()" uniqueid="[engine:junit-jupiter]/[class:test.Custom2]/[method:eventTransition()]">
+      <error>java.lang.NullPointerException: Cannot invoke "main.metamodel.State.getName()" because the return value of "main.MachineInterpreter.getCurrentState()" is null&#13;
+	at test.Custom2.eventTransition(Custom2.java:52)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>
