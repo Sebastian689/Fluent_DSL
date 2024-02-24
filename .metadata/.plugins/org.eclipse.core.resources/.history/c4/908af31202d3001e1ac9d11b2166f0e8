@@ -23,6 +23,10 @@ public class StateMachine {
 		if (machine.getInitialState() == null && !machine.getStates().isEmpty()) {
             machine.setInitialState(machine.getStates().get(0));
         }
+		
+		//currentState = null;
+        //currentTransition = null;
+
         return machine;
 	}
 
@@ -32,6 +36,7 @@ public class StateMachine {
 			currentState = new State(name);
 			machine.addState(currentState);
 		}
+		//System.out.println("In " + name);
 		return this;
 	}
 
@@ -58,10 +63,12 @@ public class StateMachine {
 
 	public StateMachine integer(String name) {
 		machine.setInteger(name, 0);
+		//currentTransition.setOperation(name, 0);
 		return this;
 	}
 
 	public StateMachine set(String name, int i) {
+		//machine.setInteger(name, i);
 		currentTransition.setOperation(name, i);
 		return this;
 	}

@@ -1,5 +1,11 @@
 package main.metamodel;
 
+import java.util.List;
+import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 public class Transition{
 	private String event;
 	private State target;
@@ -12,8 +18,9 @@ public class Transition{
 	private Integer conditionValue;
 	private ComparisonType comparisonType;
 	
+	
 	private enum OperationType { NONE, SET, INCREMENT, DECREMENT }
-	private enum ComparisonType { EQUALS, GREATER, LESS }
+	public enum ComparisonType { EQUALS, GREATER, LESS }
 	
 	public Transition(String event) {
 		this.event = event;
@@ -113,6 +120,10 @@ public class Transition{
 
 	public boolean isConditionLessThan() {
 		return this.comparisonType == ComparisonType.LESS;
+	}
+	
+	public ComparisonType comparisonType() {
+		return comparisonType;
 	}
 
 	public boolean hasOperation() {

@@ -32,6 +32,7 @@ public class StateMachine {
 			currentState = new State(name);
 			machine.addState(currentState);
 		}
+		//System.out.println("In " + name);
 		return this;
 	}
 
@@ -58,10 +59,12 @@ public class StateMachine {
 
 	public StateMachine integer(String name) {
 		machine.setInteger(name, 0);
+		//currentTransition.setOperation(name, 0);
 		return this;
 	}
 
 	public StateMachine set(String name, int i) {
+		//machine.setInteger(name, i);
 		currentTransition.setOperation(name, i);
 		return this;
 	}
